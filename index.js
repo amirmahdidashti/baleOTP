@@ -1,7 +1,7 @@
-const { getToken } = require('./auth');
-const { sendOtp } = require('./sender');
+const { getToken } = require('./getToken');
+const { sendOTP } = require('./sendOTP');
 
 module.exports = {
   getToken,
-  sendOtp,
+  sendOTP,
 };

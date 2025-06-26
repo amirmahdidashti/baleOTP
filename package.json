@@ -1,6 +1,6 @@
 {
-  "name": "baleotp",
-  "version": "1.0.0",
+  "name": "bale_otp",
+  "version": "1.0.7",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "send otp with bale",
   "dependencies": {
     "axios": "^1.10.0"
   }

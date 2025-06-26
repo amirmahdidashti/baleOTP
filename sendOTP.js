@@ -1,19 +1,18 @@
-import axios from "axios";
+const axios = require('axios');
 
 async function sendOTP(access_token, phone, otp) {
     try {
-        const res = await axios.post('https://safir.bale.ai/api/v2/send_otp', {
+        return await axios.post("https://safir.bale.ai/api/v2/send_otp", JSON.stringify({
             phone: phone,
             otp: otp
-        }, {
+        }), {
             headers: {
-                Authorization: `Bearer ${access_token}`,
+                "Authorization": `Bearer ${access_token}`
             }
         }
-        );
-        return res.data.balance;
+        ).then(res => res.data.balance).catch(err => console.log(err));
     } catch (err) {
-        throw new Error('خطا در گرفتن توکن: ' + err.message);
+        throw new Error(err.message);
     }
 }
 
