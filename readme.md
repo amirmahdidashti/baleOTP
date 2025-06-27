@@ -7,12 +7,12 @@
 ### نصب
 
 ```bash
-npm i bale_otp
+npm i bale-otp
 ```
 ### استفاده
 
 ```js
-const { getToken, sendOTP } = require("bale_otp");
+const { getToken, sendOTP } = require("bale-otp");
 
 async function main() {
     const token = await getToken("client_id", "client_secret");
